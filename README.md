@@ -5,8 +5,8 @@
 
 ## 使用说明
 
-1. 点击模板按钮 [Use this template](https://github.com/zdrka/Action-jd-scripts/generate) 创建仓库.
-2. 配置仓库同步的token以及脚本所需的环境变量.
+1. 点击模板按钮 [Use this template](https://github.com/zdrka/Action-jd-scripts/generate) 创建仓库（PS：可新建多个仓库实现更多的账号）.
+2. 配置仓库同步的token（非必须）以及脚本所需的环境变量.
 3. 手动启用或取消 或者 cron自动触发.
 
 ## FAQ

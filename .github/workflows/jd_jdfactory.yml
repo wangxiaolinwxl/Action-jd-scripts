@@ -1,8 +1,8 @@
-name: jd_pigPet
+name: jd_jdfactory
 on:
   workflow_dispatch:
   schedule:
-    - cron: '12 * * * *'
+    - cron: '10 * * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -25,18 +25,18 @@ jobs:
       - name: npm install
         run: |
           npm install
-      - name: '运行 【养猪猪】'
+      - name: '运行 【东东工厂脚本】'
         run: |
-          node jd_pigPet.js
+          node jd_jdfactory.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
+          DDFACTORY_SHARECODES: ${{ secrets.DDFACTORY_SHARECODES }}
+          FACTORAY_WANTPRODUCT_NAME: ${{ secrets.FACTORAY_WANTPRODUCT_NAME }}
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
           BARK_PUSH: ${{ secrets.BARK_PUSH }}
-          PETSHARECODES: ${{ secrets.PETSHARECODES }}
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
           TG_USER_ID: ${{ secrets.TG_USER_ID }}
-          PET_NOTIFY_CONTROL: ${{ secrets.PET_NOTIFY_CONTROL }}
           BARK_SOUND: ${{ secrets.BARK_SOUND }}
           DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
           DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
